@@ -3,6 +3,8 @@ const express = require('express')
 const router = express.Router()
 router.use(express.json())
 
+const Usuario = require('./usuarioModel')
+
 router.get('/', async (req, res) => {
   res.send({ message: 'todos os usuarios' })
 })
@@ -11,7 +13,7 @@ router.get('/:id', async (req, res) => {
   res.send({})
 })
 
-router.get('/matricula/:matricula', async (req, res) => {
+router.get('/nome/:nome', async (req, res) => {
   res.send({})
 })
 
@@ -30,12 +32,12 @@ router.delete('/:id', async (req, res) => {
   res.status(204).send({})
 })
 
-router.post('/:id/atividade', async (req, res) => {
+router.post('/:id/Email', async (req, res) => {
   res.send({})
 })
 
-router.put('/:id/atividade/:idAtividade', async (req, res) => {
+router.put('/:id/Email/:idEmail', async (req, res) => {
   res.send({})
 })
 
-module.exports = router
+module.exports = router;

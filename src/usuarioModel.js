@@ -20,7 +20,9 @@ const Usuario = db.define(
       allowNull: false
     }
   },
-  {}
+  {
+    tableName: 'Usuarios'
+  }
 )
 
 module.exports - Usuario
