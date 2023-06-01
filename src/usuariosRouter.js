@@ -4,7 +4,7 @@ const router = express.Router()
 router.use(express.json())
 
 router.get('/', async (req, res) => {
-  res.send({ message: 'todos os alunos' })
+  res.send({ message: 'todos os usuarios' })
 })
 
 router.get('/:id', async (req, res) => {
